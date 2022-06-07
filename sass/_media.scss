@@ -22,4 +22,18 @@
       color: $buttons;
     }
   }
+  .hero{
+    display: block;
+    &__subtitle{
+      max-width: 22rem;
+    }
+  }
+}
+
+@media(min-width:1200px){
+  .hero{
+    &__subtitle{
+      max-width: 30.66rem;
+    }
+  }
 }
