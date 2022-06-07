@@ -1,0 +1,25 @@
+@media(min-width:768px){
+  .menu{
+    &__nav{
+      display: block;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media(min-width:992px){
+  .nav{
+    &__item{
+      color: $primary;
+    }
+  }
+  .menu{
+    &__logo{
+      color: $buttons;
+    }
+    &__subtitle{
+      color: $buttons;
+    }
+  }
+}
