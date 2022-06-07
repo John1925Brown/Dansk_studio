@@ -1,0 +1,25 @@
+.about{
+  display: none;
+  margin-top: 5.33rem;
+  margin-bottom: 6.66rem;
+  &__wrapper{
+    display: flex;
+    justify-content: space-around;
+    & p{
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      color: $primary-dark;
+      line-height: 1.6rem;
+      margin-bottom: 1.6rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__title{
+    @include title--h2;
+    margin-bottom: 1.66rem;
+  }
+  &__text{
+    max-width: 28.66rem;
+  }
+}
