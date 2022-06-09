@@ -9,4 +9,13 @@
     background-color: $buttons;
     border: none;
   }
+  &--empty{
+    border: 2px solid #F1CDB3;
+    background: #fff;
+    text-align: center;
+  }
+}
+
+h2{
+  @include title--h2;
 }

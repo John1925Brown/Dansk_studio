@@ -29,5 +29,8 @@
     "gulp-tinypng-compress": "^1.2.5",
     "gulp-useref": "^5.0.0",
     "sass": "^1.52.2"
+  },
+  "dependencies": {
+    "swiper": "^8.2.2"
   }
 }
