@@ -1,0 +1,29 @@
+.help{
+  display: none;
+  margin-bottom: 6.66rem;
+  &__title{
+    max-width: 23.5rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  &__cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4.6rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__img{
+    margin-bottom: 2rem;
+    text-align: center;
+
+  }
+  &__subtitle{
+    color: $title;
+    text-align: center;
+    font-size: 1.33rem;
+    line-height: 1.53rem;
+  }
+}
