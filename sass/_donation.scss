@@ -1,0 +1,46 @@
+.donation{
+  display: none;
+  background: #F6F6F6;
+  margin-bottom: 6.66rem;
+  &__title{
+    max-width: 20rem;
+  }
+  &__subtitle{
+    color: $title;
+    margin-bottom: 1.33rem;
+  }
+  &__card{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-around;
+    background: $buttons;
+    height: 2.86rem;
+    width: 23.26rem;
+    border-radius: 9px;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  &__text{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-style: italic;
+    color: #B2B2B2;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    max-width: 25rem;
+  }
+}
+
+.card{
+  &__number{
+    color: $title;
+    font-size: 1.33rem;
+    line-height: 1.53rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+.donation .container{
+  display: flex;
+  padding-top: 5.4rem;
+}
