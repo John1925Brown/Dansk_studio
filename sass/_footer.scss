@@ -1,0 +1,71 @@
+.footer{
+  background: url(../img/hero-bg.png) no-repeat fixed;
+  background-size: cover;
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  padding-top: 2rem;
+  &__connection{
+    margin: 0 auto;
+  }
+  &__location{
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  &__title{
+    margin: 0 auto;
+    color: #fff;
+    max-width: 20rem;
+    margin-bottom: 2.66rem;
+    text-align: center;
+  }
+  &__puppy{
+    margin: 0 auto;
+  }
+}
+
+.connection{
+  &__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 16.66rem;
+    margin: 0 auto;
+    margin-bottom: 2.66rem;
+  }
+}
+
+.location{
+  &__address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 22rem;
+    margin: 0 auto;
+    margin-bottom: 2.66rem;
+  }
+}
+
+.info{
+  &__current{
+    color: $buttons;
+    font-size: 1.33rem;
+    line-height: 1.53rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+.address{
+  color: $buttons;
+  font-size: 1.33rem;
+  line-height: 1.53rem;
+  letter-spacing: 0.06em;
+  &--boston{
+    max-width: 17.2rem;
+  }
+}
+
+.footer .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+

@@ -1,7 +1,7 @@
 .donation{
   display: none;
   background: #F6F6F6;
-  margin-bottom: 6.66rem;
+  padding-bottom: 6.66rem;
   &__title{
     max-width: 20rem;
   }
@@ -28,6 +28,10 @@
     font-size: 0.8rem;
     line-height: 1.2rem;
     max-width: 25rem;
+  }
+  &__img{
+    margin-left: 9.33rem;
+    margin-right: 2rem;
   }
 }
 
