@@ -36,3 +36,10 @@ h2{
     cursor: pointer;
   }
 }
+
+button{
+    &:hover{
+      background-color: #FDDCC4;
+      cursor: pointer;
+    }
+}
