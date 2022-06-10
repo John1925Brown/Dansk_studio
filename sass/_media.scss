@@ -27,6 +27,12 @@
   .nav{
     &__item{
       color: $primary;
+      &:hover{
+        color: #FAFAFA;
+      }
+      &:active{
+        border-bottom: 3px solid #F1CDB3;
+      }
     }
   }
   .menu{
