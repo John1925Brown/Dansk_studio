@@ -1,39 +1,124 @@
 .header{
-  margin-top: 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
   margin-bottom: 2rem;
+  padding-top: 2rem;
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    transition: 0.2s;
+    margin-right: 2.66rem;
+    &::before{
+      content: '';
+      background-color: #000;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 0;
+    }
+    &::after{
+      content: '';
+      background-color: #000;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+    }
+    & span{
+      background-color: #000;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      top: 0.6rem;
+    }
+  }
+  &__scroll{
+    background-color: #fff;
+    z-index: 100;
+  }
 }
 
 .menu{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  position: relative;
+  z-index: 10;
   &__subtitle{
     font-family: Arial, Helvetica, sans-serif;
     color: #292929;
     font-size: 0.86rem;
     text-align: center;
     letter-spacing: 0.1em;
+    position: relative;
+    z-index: 4;
   }
   &__logo{
     color: $title;
     font-size: 2.133rem;
     margin-bottom: 10px;
     letter-spacing: 0.06em;
+    position: relative;
+    z-index: 3;
   }
   &__nav{
-    display: flex;
-    justify-content: space-between;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 2;
     color: $title;
-    display: none;
+    width: 100%;
+    padding-top: 7rem;
+    opacity: 0;
+    transition: 0.3s;
+    background-color: #fff;
   }
 }
 
+.menu__nav--active{
+  opacity: 1;
+  transition: 0.3s;
+  padding-top: 9rem;
+}
+
+.header__burger--active{
+  display: block;
+  &::after{
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  &::before{
+    transform: rotate(45deg);
+  }
+  & span{
+    height: 0;
+  }
+}
+
+
 .nav{
   &__item{
+    display: block;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin-right: 35px;
-    &:last-child{
-      margin-right: 0;
-    }
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
