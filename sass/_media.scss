@@ -1,9 +1,24 @@
 @media(min-width:768px){
+  .header{
+    &__burger{
+      display: none;
+    }
+  }
   .menu{
     &__nav{
       display: block;
       display: flex;
       flex-wrap: wrap;
+      position: static;
+      width: inherit;
+      background-color: inherit;
+      padding-top: 0;
+      opacity: 1;
+    }
+  }
+  .nav{
+    &__item{
+      margin-bottom: 0;
     }
   }
   .footer{
@@ -21,12 +36,26 @@
       margin-bottom: 2.2rem;
     }
   }
+  .friends{
+    padding-top: 2rem;
+    margin-top: 10.66rem;
+  }
 }
 
 @media(min-width:992px){
+  .header{
+    &__scroll{
+      background: url(../img/hero-bg.png) no-repeat fixed;
+      background-size: cover;
+      background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    }
+  }
   .nav{
     &__item{
       color: $primary;
+      &:last-child{
+        margin-right: 0;
+      }
       &:hover{
         color: #FAFAFA;
       }
@@ -45,6 +74,8 @@
   }
   .hero{
     display: block;
+    padding-top: 12rem;
+
     &__subtitle{
       max-width: 22rem;
     }
@@ -62,6 +93,10 @@
     &__location{
       margin-bottom: 0;
     }
+  }
+  .friends{
+    margin-top: 0;
+    padding-top: 5.33rem;
   }
 }
 
