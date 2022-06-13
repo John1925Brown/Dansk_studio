@@ -15,7 +15,11 @@ sliders.forEach((el) => {
         column: 1,
       },
       768: {
-        column: 2,
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 4,
+        rows: 2,
       }
     },
     // If we need pagination
@@ -53,14 +57,14 @@ $('.header__burger').on('click', function (e) {
 (function () {
   const header = document.querySelector('.header')
   window.onscroll = () => {
-    if(window.pageYOffset > 50) {
+    if (window.pageYOffset > 50) {
       header.classList.add('header__scroll');
     }
-      else{
-        header.classList.remove('header__scroll')
-      }
+    else {
+      header.classList.remove('header__scroll')
+    }
   };
-  }());
+}());
 
 
 

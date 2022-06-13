@@ -22,12 +22,19 @@ a{
 
 .swiper{
   max-height: 95.33rem;
+  overflow: visible;
+  &-slide{
+    &:last-child{
+      margin-bottom: 2rem;
+    }
+  }
   &-button{
     &-next{
       background: url(../img/svg/next.svg) center center no-repeat;
       @include slider__arrows;
       &::after{
         display: none;
+        bottom: -2rem;
       }
     }
     &-prev{
@@ -44,13 +51,32 @@ a{
     color: #292929;
     background-color: $buttons;
     text-align: center;
-    width: 3.46rem;
-    height: 3.46rem;
+    width: 3.73rem;
+    height: 3.73rem;
     margin: 0 auto;
+    margin-top: 2rem;
     border-radius: 100px;
   }
 }
 .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-  bottom: 0;
+  bottom: -2rem;
   text-align: center;
+
+}
+
+.swiper-pagination-current{
+  display: block;
+  padding-top: 13px;
+
+}
+
+.card__image img{
+  height: 270px;
+  width: 270px;
+}
+.swiper-button-next{
+  bottom: -2rem;
+}
+.swiper-button-prev{
+  bottom: -2rem;
 }
