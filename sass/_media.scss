@@ -39,6 +39,7 @@
   .friends{
     padding-top: 2rem;
     margin-top: 10.66rem;
+    padding-bottom: 5rem;
   }
 }
 
@@ -97,6 +98,15 @@
   .friends{
     margin-top: 0;
     padding-top: 5.33rem;
+    padding-bottom: 6.66rem;
+  }
+  .donation{
+    &__img{
+      margin-left: 0;
+    }
+  }
+  .donation .container{
+    justify-content: space-between;
   }
 }
 
@@ -104,6 +114,12 @@
   .hero{
     &__subtitle{
       max-width: 30.66rem;
+    }
+  }
+  .donation{
+    &__img{
+      margin-right: 2rem;
+      margin-left: 9.33rem;
     }
   }
 }
